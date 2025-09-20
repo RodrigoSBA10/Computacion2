@@ -1,0 +1,18 @@
+body{
+    background-image: url('../images/viaLactea.avif');
+    background-size: cover;
+    background-attachment: fixed;    
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+h1{
+    margin-top: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px black;
+    color: green;
+}
+.audio{
+    margin-top: 20px;
+    opacity: 0.4;
+}

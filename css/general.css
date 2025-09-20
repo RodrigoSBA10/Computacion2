@@ -1,0 +1,30 @@
+
+ul.menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(135, 206, 235, 0.3);
+    padding: 20px;
+    border-radius: 50px;
+    width: 50%;
+    margin: 0 auto;
+    gap: 60px;
+}
+a{
+    text-decoration: none;
+    color: violet;
+    font-size: 2em;
+}
+a:hover{
+    color: wheat;
+    font-size: 3em;
+}
+.marquesina{
+    animation: move 10s linear infinite;
+    display: inline-table;
+}
+
+@keyframes move {
+    0% { transform: translateX(35%); }
+    100% { transform: translateX(-35%); }
+}
