@@ -25,3 +25,7 @@ h1{
     width: 50%;
     background-color: rgb(240, 240, 240, 0.3);
 }
+#contaor{
+    font-size: 3.5em;
+    color: black;
+}

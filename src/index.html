@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/inicio.css">
     <title>El Sistema Solar</title>
 </head>
 <body>
     <nav class="menu-navegacion">
         <ul class="menu">
             <li class="inicio"><a href="index.html">Via Lactea</a></li>
-            <li class="sistema solar"><a href="html/sistemaSolar.html">Sistema Solar</a></li>
-            <li class="planetas"><a href="html/planetas.html">Planetas</a></li>
-            <li class="nasa"><a href="html/nasa.html">Nasa</a></li>
+            <li class="sistema solar"><a href="sistemaSolar.html">Sistema Solar</a></li>
+            <li class="planetas"><a href="planetas.html">Planetas</a></li>
+            <li class="nasa"><a href="nasa.html">Nasa</a></li>
         </ul>
     </nav>
     <h1>La Via Lactea</h1>
@@ -22,8 +22,21 @@
             La Vía Láctea es la galaxia de la cual forma parte el sistema solar, es decir, la galaxia en donde se encuentra la Tierra. Consiste en una gigantesca agrupación de estrellas, planetas y nubes de gas con forma de espiral barrada y un diámetro medio de alrededor de 200.000 años luz. En su centro habita un agujero negro súper masivo, cuya fuerza gravitacional mantiene los cúmulos estelares en una órbita estable.
         </p>  
         <audio  controls autoplay class="audio" >
-            <source src="multimedia/inter.mp3" type="audio/mpeg">
+            <source src="../multimedia/inter.mp3" type="audio/mpeg">
         </audio>
+        <p>Visitado <span id="contador"></span> veces</p>
     </div>
+    
+<script>
+    let visitas = localStorage.getItem("visitas")
+    if(visitas === null){
+        visitas = 1;
+    } else{
+        visitas = parseInt(visitas) + 1;
+    }
+
+    localStorage.setItem("visitas", visitas);
+    document.getElementById("contador").textContent = visitas;
+</script>
 </body>
 </html>
