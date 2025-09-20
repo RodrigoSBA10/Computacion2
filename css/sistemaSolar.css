@@ -25,11 +25,11 @@ video{
     width: 90%;
     border-radius: 15px;
 }
-.videoA{
+.videoA, .planetas{
     color: chocolate;
     font-size: 1.2em;
 }
-.videoA:hover{
+.videoA:hover, .planetas:hover{
     color: red;
     font-size: 1.5em;
     text-decoration: none;
