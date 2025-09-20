@@ -16,3 +16,12 @@ h1{
     margin-top: 20px;
     opacity: 0.4;
 }
+.contenido{
+    margin-left: 25%;
+    padding: 10px;
+    font-size: 1.5em;
+    color: black;
+    border-radius: 25px;
+    width: 50%;
+    background-color: rgb(240, 240, 240, 0.3);
+}
