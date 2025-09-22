@@ -19,12 +19,3 @@ a:hover{
     color: wheat;
     font-size: 3em;
 }
-.marquesina{
-    animation: move 10s linear infinite;
-    display: inline-table;
-}
-
-@keyframes move {
-    0% { transform: translateX(35%); }
-    100% { transform: translateX(-35%); }
-}
